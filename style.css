@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: no-repeat;
+  font-weight: bold;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/*--------------------------------------nav---------------------------------------*/
+/* nav{
+  background-color: black;
+  width: auto;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column; */
+/* } */
+
+/*--------------------------------------nav---------------------------------------*/
+
+
+.emballage {
+  position: fixed;
+}
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider_container_volume {
+  transform: rotate(270deg);
+  position: absolute;
+  top: 220px;
+  height: 110px;
+}
+
+.icon_song {
+  position: relative;
+  top: -10px;
+}
+
+i.fa-volume-mute,
+i.fa-volume-up {
+  transform: rotate(90deg);
+}
+
+i.fa-volume-mute {
+  left: -20px;
+  position: absolute;
+  top: -7px;
+}
+
+i.fa-volume-up {
+  left: 194px;
+  position: absolute;
+  top: -7px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art {
+  margin: 25px;
+  height: 280px;
+  width: 340px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 5px 5px 15px black;
+}
+
+.now-playing {
+  font-size: 1rem;
+  color: white;
+}
+
+.track-name {
+  font-size: 2.5rem;
+}
+
+
+.track-artist {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  background-color: #FFFAFA;
+  border-radius: 15px;
+  padding: 5px;
+  padding-right: 100px;
+  padding-left: 100px;
+  box-shadow: 5px 5px 15px black;
+}
+
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+
+.active {
+  color: black;
+}
+
+.reload,
+.randomActive,
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.reload:hover,
+.randomActive:hover,
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seek_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #ffffff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 11px;
+  border-radius: 15px;
+  background: #ffffff;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: rgb(0, 0, 0);
+  border: 3px solid #ffffff;
+  cursor: grab;
+  border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 140%;
+}
+
+.current-time,
+.total-duration {
+  padding: 10px;
+  color: white;
+}
+
+
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward,
+i.fa-stop-circle,
+i.fa-fast-backward,
+i.fa-fast-forward,
+p {
+  cursor: pointer;
+  color: white;
+  list-style: 2px solid black;
+}
+
+
+.randomActive {
+  color: rgb(60, 51, 51);
+  border-bottom: #FFFAFA;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+  .track-art {
+    margin: 90px;
+    height: 170px;
+    width: 170px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 15px black;
+  }
+
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .reload,
+  .randomActive,
+  .repeat-track,
+  .random-track,
+  .playpause-track,
+  .prev-track,
+  .next-track {
+    padding: 2%;
+    opacity: 0.8;
+    transition: opacity .2s;
+  }
+}
